@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 id="mariana">AXEL ALONSO</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div id="menu">
+            <ul>
+                <li><a href="#habilidades">Hablilidad y conocimiento </a> </li>
+                <li><a href="#educacion">Educación</a> </li>
+                <li><a href="#perfiles">Perfiles Sociales</a> </li>
+                <li><a href="#contactar">Contactar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article>
+        <div class="text">
+            <p class="color">Me apasionan temas como son: el desarrollo web (HTML, JavaScript, CSS), <br>
+                el emprendimiento, las tecnologias web etc.
+            </p>
+            <hr>
+
+            <h2 id="habilidades">Habilidades y conocimientos</h2>
+            <ul>
+                <li><b>Desarrollo web: </b>HTML5, CSS3, JavaScript, Python,<br></li>
+
+            </ul>
+            <hr>
+            <h2 id="educacion">Educación</h2>
+            <table>
+                <tr>
+                    <th>Título</th>
+                    <th>Entidad</th>
+                    <th>Promoción</th>
+                </tr>
+
+                <tr>
+                    <td>Desarrollo web</td>
+                    <td>Plan Ceibal (Jóvenes a programar)</td>
+                    <td> 2023</td>
+                </tr>
+
+                <tr>
+                    <td>Adm de empresas</td>
+                    <td>FCEA</td>
+                    <td>En curso</td>
+                </tr>
+            </table>
+            <hr>
+
+            <h2 id="perfiles"> Perfiles Sociales</h2>
+            <p>Tambien puedes encontrarnos en: </p>
+
+            <ul>
+                <li><a href="Axel">Axel Alonso</a></li>
+                <li><a href="https://github.com/axelalonso203" target="_blank"> GitHub</a></li>
+                <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Des" target="_blank"> Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/axel-alonso-pist%C3%B3n-433748228/" target="_blank">Linkedin</a></li>
+            </ul>
+
+
+            <hr>
+            <div id="formulario">
+
+            <form action="#" method="post" class="formulario">
+                <!-- Crea un formulario que enviará sus datos a la misma página (por el #) y utilizará el método post para enviar los datos del formulario (Los datos enviados NO quedan visibles en la dirección URL para el usuario). -->
+                <label  id="contactar" for="nombre">Para:</label>
+                <!-- Se utiliza para asociar un texto descriptivo "Nombre:" con un elemento de formulario específico y el atributo for es para especificar a qué elemento de formulario se está asociando, en este caso se va a asociar al elemento con id="nombre". -->
+                <input type="text" id="nombre" name="nombre" required>
+                <!-- input crea un campo de entrada (de texto por el atributo type con valor "text"). El atributo id con el valor "nombre" permite asociar este campo de entrada con el texto descriptivo del label de arriba. Crea una relacion entre ellos. El atributo name es para especificar el nombre del campo de entrada de texto cuando se envía el formulario. -->
+                <br>
+
+                <label for="tematica">Tematica:</label>
+                <select id="tematica">
+                    <option value="" disabled selected>--Elige un tema--</option>
+                    <option value="opcion1">Consulta</option>
+                    <option value="opcion2">Propuesta</option>
+                    <option value="opcion3">Reporte</option>
+                    <option value="opcion4">Otro</option>
+                </select>
+                <br>
+                <!-- Esta etiqueta sirve para crear un salto de linea (Espacio vertical mayor entre lo visible anterior y lo visible siguiente)-->
+
+
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+                <br>
+
+                <label for="cuerpo">Cuerpo:</label>
+                <textarea id="cuerpo" rows="2" cols="20"></textarea>
+
+                <input type="submit" value="Enviar">
+                <!-- El atributo type="submit" indica que este <input> es un botón de envío. Cuando se hace clic en el botón, se envían los datos del formulario al servidor utilizando el método especificado en el atributo method del elemento <form>. El atributo value="Enviar" especifica el texto o el valor que se mostrará en el botón. En este caso, el texto "Enviar" se mostrará en el botón. -->
+                </form>
+            </div>
+        </div>
+    </article>
+
+
+    <footer >
+        <div class="color">
+            <ul>
+                <li>© 2023</li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
